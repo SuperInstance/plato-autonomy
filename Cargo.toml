@@ -1,0 +1,15 @@
+[package]
+name = "plato-autonomy"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Autonomy metrics and reporting for PLATO rooms"
+repository = "https://github.com/SuperInstance/plato-autonomy"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+serde_json = "1"
+
+[lib]
+path = "src/lib.rs"
